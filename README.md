@@ -6,6 +6,10 @@ An C language, console based program which provides different options to the use
 - squareArea
 - circleArea
 - rectengleArea
+- cubeArea
+- coneArea
+- sphereArea
+- cylinderArea
 
 ### Included Shapes : 
 - Square
@@ -60,3 +64,61 @@ More will be added soon!!
 			- **Type** : float
 			- **Description** : stores value of area
 	- **Description** : Takes input of circle radius and calculates area of rectangle
+
+- ### Cube Area Method
+	- **Name** : cubeArea
+	- **Type** : void
+	- **Attributes** : none
+	- **Variables** : 2 Varialbles
+		- **cubeSide**
+			- **Type** : int
+			- **Description** : stores user input of cube side value	
+		- **area**
+			- **Type** : float
+			- **Description** : stores value of area
+	- **Description** : Takes input of cube side and calculates area of square
+
+- ### Cone Area Method
+	- **Name** : coneArea
+	- **Type** : void
+	- **Attributes** : none
+	- **Variables** : 3 Varialbles
+		- **height**
+			- **Type** : int
+			- **Description** : stores user input of height value	
+        - **radius**
+			- **Type** : int
+			- **Description** : stores user input of radius value	
+		- **area**
+			- **Type** : float
+			- **Description** : stores value of area
+	- **Description** : Takes input of cone height, radius and calculates area of square
+
+- ### Sphere Area Method
+	- **Name** : sphereArea
+	- **Type** : void
+	- **Attributes** : none
+	- **Variables** : 2 Varialbles
+		- **radius**
+			- **Type** : int
+			- **Description** : stores user input of radius value	
+		- **area**
+			- **Type** : float
+			- **Description** : stores value of area
+	- **Description** : Takes input of Sphere Radius and calculates area of square
+
+- ### Cylinder Area Method
+	- **Name** : cylinderArea
+	- **Type** : void
+	- **Attributes** : none
+	- **Variables** : 3 Varialbles
+		- **radius**
+			- **Type** : int
+			- **Description** : stores user input of radius value	
+		- **height**
+			- **Type** : int
+			- **Description** : stores user input of height value	
+		- **area**
+			- **Type** : float
+			- **Description** : stores value of area
+	- **Description** : Takes input of Cylinder height, radius and calculates area of square
