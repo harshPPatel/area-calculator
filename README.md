@@ -8,6 +8,9 @@ An C language, console based program which provides different options to the use
 - math.h
 - stdbool.h
 
+### Global Variables :
+- **PI** : 3.14159
+
 ### Included Methods : 
 - squareArea
 - circleArea
