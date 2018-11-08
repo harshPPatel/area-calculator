@@ -79,7 +79,7 @@ void circleArea(){
 	scanf("%d", &radius);
 	
 	/* Calculate Area */
-	area = 2 * PI * radius;
+	area = PI * radius * radius;
 	
 	/* output */
 	printf("Area of your circle is : %0.2f", area);
@@ -167,6 +167,34 @@ void sphereArea(){
 
 
 /*
+ * Function 	: cylinderArea
+ * Attributes 	: none
+ * Variables	: radius		=> Type: int	=>	To store user input for the value of cylinder raidus
+ *				  height		=> Type: int	=>	To store user input for the value of cylinder height
+ *				  area			=> Type: float	=>	To store Area of shape
+ * Description  : Take input of cylinder height, raidus and calculate area
+ * Method Type	: void 
+ */
+
+void cylinderArea(){
+	/* Variables */
+	int radius, height;
+	float area;
+	
+	/* User Input */
+	printf("Enter value of height : ");
+	scanf("%d", &height);
+	printf("Enter value of radius : ");
+	scanf("%d", &radius);
+	
+	/* Calculate Area */
+	area = (2 * PI * radius) * (height + radius);
+	
+	/* output */
+	printf("Area of your cone is : %0.2f", area);
+}
+
+/*
  * Function 	: main
  * Attributes 	: none
  * Description  : Calls every method and run them
@@ -207,6 +235,9 @@ void main() {
 				break;
 			case 6:
 				sphereArea();
+				break;
+			case 7:
+				cylinderArea();
 				break;
 			default:
 				return;
