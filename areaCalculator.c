@@ -3,6 +3,9 @@
 #include<math.h>
 #include<stdbool.h>
 
+/* Global Variables */
+#define PI 3.14159
+
 /*
  * Function 	: squareArea
  * Attributes 	: none
@@ -57,6 +60,32 @@ void rectangleArea(){
 	printf("Area of your rectangle is : %0.2f", area);
 }
 
+/*
+ * Function 	: circleArea
+ * Attributes 	: none
+ * Variables	: sideOne		=> Type: int	=>	To store user input for the value of Side 1
+ *				  sideTwo		=> Type: int	=>	To store user input for the value of Side 2
+ *				  area			=> Type: float	=>	To store Area of shape
+ * Description  : Take input of rectangle sides and calculate area
+ * Method Type	: void 
+ */
+
+void circleArea(){
+	/* Variables */
+	int radius;
+	float area;
+	
+	/* User Input */
+	printf("Enter value of Radius : ");
+	scanf("%d", &radius);
+	
+	/* Calculate Area */
+	area = 2 * PI * radius;
+	
+	/* output */
+	printf("Area of your rectangle is : %0.2f", area);
+}
+
 
 /*
  * Function 	: main
@@ -86,6 +115,9 @@ void main() {
 				squareArea();
 				break;
 			case 2:
+				circleArea();
+				break;
+			case 3:
 				rectangleArea();
 				break;
 			default:
