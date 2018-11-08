@@ -274,7 +274,6 @@ void main() {
 		if (userChoice < 1 || userChoice > 8) {
 			printf("Invlaid Input!\n");
 		} else {
-			
 			/* Switch to call methods according userChoice */
 			switch(userChoice) {
 				case 1:
@@ -302,9 +301,5 @@ void main() {
 					return;
 			}
 		}
-
 	}
-	
-	//TODO: Add if else statement to check input in various functions
-
 }
