@@ -63,10 +63,9 @@ void rectangleArea(){
 /*
  * Function 	: circleArea
  * Attributes 	: none
- * Variables	: sideOne		=> Type: int	=>	To store user input for the value of Side 1
- *				  sideTwo		=> Type: int	=>	To store user input for the value of Side 2
+ * Variables	: radius		=> Type: int	=>	To store user input for the value of radius
  *				  area			=> Type: float	=>	To store Area of shape
- * Description  : Take input of rectangle sides and calculate area
+ * Description  : Take input of circle radius and calculate area
  * Method Type	: void 
  */
 
