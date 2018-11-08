@@ -111,6 +111,34 @@ void cubeArea(){
 	printf("Area of your cube is : %0.2f", area);
 }
 
+
+/*
+ * Function 	: coneArea
+ * Attributes 	: none
+ * Variables	: height		=> Type: int	=>	To store user input for the value of cone height
+ *				  radius		=> Type: int	=>	To store user input for the value of cone raidus
+ *				  area			=> Type: float	=>	To store Area of shape
+ * Description  : Take input of cone height, raidus and calculate area
+ * Method Type	: void 
+ */
+
+void coneArea(){
+	/* Variables */
+	int height, radius;
+	float area;
+	
+	/* User Input */
+	printf("Enter value of height : ");
+	scanf("%d", &height);
+	printf("Enter value of radius : ");
+	scanf("%d", &radius);
+	
+	/* Calculate Area */
+	area = PI * radius * (radius + sqrt((height * height) + (radius * radius)));
+	
+	/* output */
+	printf("Area of your cone is : %0.2f", area);
+}
 /*
  * Function 	: main
  * Attributes 	: none
@@ -147,6 +175,8 @@ void main() {
 			case 4:
 				cubeArea();
 				break;
+			case 5:
+				coneArea();
 			default:
 				return;
 		}
