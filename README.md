@@ -2,7 +2,7 @@
 
 An C language, console based program which provides different options to the user to calculate its area. It have different methods for all different shapes and switch statement is used to check user input. While loop is used to run this function continuously. But it breaks the loop when user enters 8 in the console.
 
-### Included Functions/Methods : 
+### Included Methods : 
 - squareArea
 - circleArea
 - rectengleArea
@@ -18,7 +18,7 @@ An C language, console based program which provides different options to the use
 
 More will be added soon!!
 
-## Functions
+## Methods
 - ### Square Area Method
 	- **Name** : squareArea
 	- **Type** : void
