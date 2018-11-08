@@ -154,5 +154,6 @@ void main() {
 	}
 	
 	//TODO: Add if else statement to check input in various functions
+	//TODO: Make Markdown File
 
 }
