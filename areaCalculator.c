@@ -82,9 +82,34 @@ void circleArea(){
 	area = 2 * PI * radius;
 	
 	/* output */
-	printf("Area of your rectangle is : %0.2f", area);
+	printf("Area of your circle is : %0.2f", area);
 }
 
+
+/*
+ * Function 	: cubeArea
+ * Attributes 	: none
+ * Variables	: cubeSide		=> Type: int	=>	To store user input for the value of cube Side
+ *				  area			=> Type: float	=>	To store Area of shape
+ * Description  : Take input of cube side and calculate area
+ * Method Type	: void 
+ */
+
+void cubeArea(){
+	/* Variables */
+	int cubeSide;
+	float area;
+	
+	/* User Input */
+	printf("Enter value of side : ");
+	scanf("%d", &cubeSide);
+	
+	/* Calculate Area */
+	area = cubeSide * 12;
+	
+	/* output */
+	printf("Area of your cube is : %0.2f", area);
+}
 
 /*
  * Function 	: main
@@ -118,6 +143,9 @@ void main() {
 				break;
 			case 3:
 				rectangleArea();
+				break;
+			case 4:
+				cubeArea();
 				break;
 			default:
 				return;
