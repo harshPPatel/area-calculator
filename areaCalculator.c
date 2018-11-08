@@ -24,11 +24,18 @@ void squareArea(){
 	printf("Enter value of Square Side : ");
 	scanf("%d", &squareSide);
 	
-	/* Calculate Area */
-	area = pow(squareSide, 2);
+	/* Validation */
+	if (squareSide <= 0) {
+		printf("Invlaid Input!\n");
+		squareArea();
+	} else {
+		/* Calculate Area */
+		area = pow(squareSide, 2);
 	
-	/* output */
-	printf("Area of your square is : %0.2f", area);
+		/* output */
+		printf("Area of your square is : %0.2f", area);	
+	}	
+	
 }
 
 
@@ -50,14 +57,25 @@ void rectangleArea(){
 	/* User Input */
 	printf("Enter value of Side One : ");
 	scanf("%d", &sideOne);
-	printf("Enter value of Side Two : ");
-	scanf("%d", &sideTwo);
-	
-	/* Calculate Area */
-	area = sideOne * sideTwo;
-	
-	/* output */
-	printf("Area of your rectangle is : %0.2f", area);
+	/* Validation */
+	if (sideOne <= 0) {
+		printf("Invlaid Input!\n");
+		rectangleArea();
+	} else {
+		printf("Enter value of Side Two : ");
+		scanf("%d", &sideTwo);
+		
+		/* Validation */
+		if (sideOne <= 0 || sideTwo <= 0){ 
+			printf("Invlaid Input!\n");
+			rectangleArea();
+		} else {	
+			/* Calculate Area */
+			area = sideOne * sideTwo;
+			/* output */
+			printf("Area of your rectangle is : %0.2f", area);
+		}
+	}
 }
 
 /*
@@ -78,13 +96,18 @@ void circleArea(){
 	printf("Enter value of Radius : ");
 	scanf("%d", &radius);
 	
-	/* Calculate Area */
-	area = PI * radius * radius;
+	/* Validation */
+	if (radius <= 0) {
+		printf("Invlaid Input!\n");
+		circleArea();
+	} else {
+		/* Calculate Area */
+		area = PI * radius * radius;
 	
-	/* output */
-	printf("Area of your circle is : %0.2f", area);
+		/* output */
+		printf("Area of your circle is : %0.2f", area);
+	}
 }
-
 
 /*
  * Function 	: cubeArea
@@ -104,11 +127,16 @@ void cubeArea(){
 	printf("Enter value of side : ");
 	scanf("%d", &cubeSide);
 	
-	/* Calculate Area */
-	area = cubeSide * 12;
-	
-	/* output */
-	printf("Area of your cube is : %0.2f", area);
+	/* Validation */
+	if (cubeSide <= 0) {
+		printf("Invlaid Input!\n");
+		cubeArea();
+	} else {
+		/* Calculate Area */
+		area = cubeSide * 12;
+		/* output */
+		printf("Area of your cube is : %0.2f", area);
+	}
 }
 
 
@@ -130,14 +158,25 @@ void coneArea(){
 	/* User Input */
 	printf("Enter value of height : ");
 	scanf("%d", &height);
-	printf("Enter value of radius : ");
-	scanf("%d", &radius);
-	
-	/* Calculate Area */
-	area = PI * radius * (radius + sqrt((height * height) + (radius * radius)));
-	
-	/* output */
-	printf("Area of your cone is : %0.2f", area);
+	if (height <= 0) {
+		printf("Invlaid Input!\n");
+		coneArea();
+	} else {
+		printf("Enter value of radius : ");
+		scanf("%d", &radius);
+		
+		/* Validation */
+		if (height <= 0 || radius <= 0){
+			printf("Invlaid Input!\n");
+			coneArea();
+		} else {
+			/* Calculate Area */
+			area = PI * radius * (radius + sqrt((height * height) + (radius * radius)));
+			
+			/* output */
+			printf("Area of your cone is : %0.2f", area);
+		}
+	}
 }
 
 /*
@@ -158,11 +197,16 @@ void sphereArea(){
 	printf("Enter value of radius : ");
 	scanf("%d", &radius);
 	
-	/* Calculate Area */
-	area = 4 * PI * radius * radius;
-	
-	/* output */
-	printf("Area of your cone is : %0.2f", area);
+	/* Validation */
+	if (radius <= 0) {
+		printf("Invlaid Input!\n");
+		sphereArea();
+	} else {
+		/* Calculate Area */
+		area = 4 * PI * radius * radius;
+		/* output */
+		printf("Area of your cone is : %0.2f", area);
+	}
 }
 
 
@@ -184,14 +228,24 @@ void cylinderArea(){
 	/* User Input */
 	printf("Enter value of height : ");
 	scanf("%d", &height);
-	printf("Enter value of radius : ");
-	scanf("%d", &radius);
-	
-	/* Calculate Area */
-	area = (2 * PI * radius) * (height + radius);
-	
-	/* output */
-	printf("Area of your cone is : %0.2f", area);
+	if(height <= 0) {
+		printf("Invlaid Input!\n");
+		cylinderArea();
+	} else {
+		printf("Enter value of radius : ");
+		scanf("%d", &radius);
+		
+		/* Validation */
+		if (height <= 0 || radius <= 0) {
+			printf("Invlaid Input!\n");
+			cylinderArea();
+		} else {
+			/* Calculate Area */
+			area = (2 * PI * radius) * (height + radius);
+			/* output */
+			printf("Area of your cone is : %0.2f", area);
+		}
+	}
 }
 
 /*
@@ -216,36 +270,41 @@ void main() {
 		printf("Enter Your Choice : ");
 		scanf("%d", &userChoice);
 		
-		/* Switch to call methods according userChoice */
-		switch(userChoice) {
-			case 1:
-				squareArea();
-				break;
-			case 2:
-				circleArea();
-				break;
-			case 3:
-				rectangleArea();
-				break;
-			case 4:
-				cubeArea();
-				break;
-			case 5:
-				coneArea();
-				break;
-			case 6:
-				sphereArea();
-				break;
-			case 7:
-				cylinderArea();
-				break;
-			default:
-				return;
+		/* Validation */
+		if (userChoice < 1 || userChoice > 8) {
+			printf("Invlaid Input!\n");
+		} else {
+			
+			/* Switch to call methods according userChoice */
+			switch(userChoice) {
+				case 1:
+					squareArea();
+					break;
+				case 2:
+					circleArea();
+					break;
+				case 3:
+					rectangleArea();
+					break;
+				case 4:
+					cubeArea();
+					break;
+				case 5:
+					coneArea();
+					break;
+				case 6:
+					sphereArea();
+					break;
+				case 7:
+					cylinderArea();
+					break;
+				default:
+					return;
+			}
 		}
 
 	}
 	
 	//TODO: Add if else statement to check input in various functions
-	//TODO: Make Markdown File
 
 }
