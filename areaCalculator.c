@@ -139,6 +139,33 @@ void coneArea(){
 	/* output */
 	printf("Area of your cone is : %0.2f", area);
 }
+
+/*
+ * Function 	: sphereArea
+ * Attributes 	: none
+ * Variables	: radius		=> Type: int	=>	To store user input for the value of sphere raidus
+ *				  area			=> Type: float	=>	To store Area of shape
+ * Description  : Take input of sphere raidus and calculate area
+ * Method Type	: void 
+ */
+
+void sphereArea(){
+	/* Variables */
+	int radius;
+	float area;
+	
+	/* User Input */
+	printf("Enter value of radius : ");
+	scanf("%d", &radius);
+	
+	/* Calculate Area */
+	area = 4 * PI * radius * radius;
+	
+	/* output */
+	printf("Area of your cone is : %0.2f", area);
+}
+
+
 /*
  * Function 	: main
  * Attributes 	: none
@@ -177,6 +204,10 @@ void main() {
 				break;
 			case 5:
 				coneArea();
+				break;
+			case 6:
+				sphereArea();
+				break;
 			default:
 				return;
 		}
