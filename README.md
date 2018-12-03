@@ -2,7 +2,7 @@
 
 An C language, console based program which provides different options to the user to calculate its area. It have different methods for all different shapes and switch statement is used to check user input. While loop is used to run this function continuously. But it breaks the loop when user enters 8 in the console.
 
-See Documentation <a href="https://harshppatel.github.io/area%20Calculator%20Documentation%20C%20Language/area_calculator_8c.html" target="_blank">here</a>.
+See Documentation [here](https://harshppatel.github.io/area%20Calculator%20Documentation%20C%20Language/area_calculator_8c.html).
 
 ### includes :
 - stdio.h
