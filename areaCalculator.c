@@ -1,3 +1,13 @@
+/**
+ * \file areaCalculator.c
+ * \author Harsh
+ * \date 02 Dec 2018
+ * \brief Area Calculator built on C Language
+ *
+ * \see http://harshppatel.gtihub.io
+ */
+
+
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
@@ -13,6 +23,29 @@
  *				  area			=> Type: float	=>	To store Area of shape
  * Description  : Take input of square side and calculate area of square
  * Method Type	: void 
+ */
+ 
+ /**
+ * \brief Function named squareArea which ask user for a number, validates it and calculate area of square and prints it to the console
+ * 
+ * \fn squareArea
+ * 
+ *  <P> 
+ * 		<STRONG>Attributes</STRONG> : None <br>
+ *  	<STRONG>Function type</STRONG> : Void <br>
+ *		<STRONG>Variables</STRONG> : 
+ *		<UL>
+ *			<LI>squareSide : (type: int) To save user input</LI>
+ *			<LI>area : (type: float) To save area value</LI>
+ *      </UL>
+ *  </P>
+ *  \code
+ * 
+ *  Example of Use Of The Method
+ *  
+ *  squareArea();
+ *  
+ *  \endcode
  */
 
 void squareArea(){
@@ -47,6 +80,30 @@ void squareArea(){
  *				  area			=> Type: float	=>	To store Area of shape
  * Description  : Take input of rectangle sides and calculate area
  * Method Type	: void 
+ */
+ 
+ /**
+ * \brief Function named rectangleArea which ask user for two numbers, validates it and calculate area of rectangle and prints it to the console
+ * 
+ * \fn rectangleArea
+ * 
+ *  <P> 
+ * 		<STRONG>Attributes</STRONG> : None <br>
+ *  	<STRONG>Function type</STRONG> : Void <br>
+ *		<STRONG>Variables</STRONG> : 
+ *		<UL>
+ *			<LI>sideOne : (type: int) To save user input</LI>
+ *			<LI>sideTwo : (type: int) To save user input</LI>
+ * 			<LI>area : (type: float) To save area value</LI>
+ *      </UL>
+ *  </P>
+ *  \code
+ * 
+ *  Example of Use Of The Method
+ *  
+ *  rectangleArea();
+ *  
+ *  \endcode
  */
 
 void rectangleArea(){
@@ -86,6 +143,29 @@ void rectangleArea(){
  * Description  : Take input of circle radius and calculate area
  * Method Type	: void 
  */
+ 
+  /**
+ * \brief Function named circleArea which ask user for a number, validates it and calculate area of circle and prints it to the console
+ * 
+ * \fn circleArea
+ * 
+ *  <P> 
+ * 		<STRONG>Attributes</STRONG> : None <br>
+ *  	<STRONG>Function type</STRONG> : Void <br>
+ *		<STRONG>Variables</STRONG> : 
+ *		<UL>
+ *			<LI>radius : (type: int) To save user input</LI>
+ * 			<LI>area : (type: float) To save area value</LI>
+ *      </UL>
+ *  </P>
+ *  \code
+ * 
+ *  Example of Use Of The Method
+ *  
+ *  circleArea();
+ *  
+ *  \endcode
+ */
 
 void circleArea(){
 	/* Variables */
@@ -118,6 +198,29 @@ void circleArea(){
  * Method Type	: void 
  */
 
+ /**
+ * \brief Function named cubeArea which ask user for a number, validates it and calculate area of cube and prints it to the console
+ * 
+ * \fn cubeArea
+ * 
+ *  <P> 
+ * 		<STRONG>Attributes</STRONG> : None <br>
+ *  	<STRONG>Function type</STRONG> : Void <br>
+ *		<STRONG>Variables</STRONG> : 
+ *		<UL>
+ *			<LI>cubeSide : (type: int) To save user input</LI>
+ * 			<LI>area : (type: float) To save area value</LI>
+ *      </UL>
+ *  </P>
+ *  \code
+ * 
+ *  Example of Use Of The Method
+ *  
+ *  cubeArea();
+ *  
+ *  \endcode
+ */
+
 void cubeArea(){
 	/* Variables */
 	int cubeSide;
@@ -148,6 +251,30 @@ void cubeArea(){
  *				  area			=> Type: float	=>	To store Area of shape
  * Description  : Take input of cone height, raidus and calculate area
  * Method Type	: void 
+ */
+ 
+  /**
+ * \brief Function named coneArea which ask user for two numbers, validates it and calculate area of cone and prints it to the console
+ * 
+ * \fn coneArea
+ * 
+ *  <P> 
+ * 		<STRONG>Attributes</STRONG> : None <br>
+ *  	<STRONG>Function type</STRONG> : Void <br>
+ *		<STRONG>Variables</STRONG> : 
+ *		<UL>
+ *			<LI>height : (type: int) To save user input</LI>
+ *			<LI>radius : (type: int) To save user input</LI>
+ * 			<LI>area : (type: float) To save area value</LI>
+ *      </UL>
+ *  </P>
+ *  \code
+ * 
+ *  Example of Use Of The Method
+ *  
+ *  coneArea();
+ *  
+ *  \endcode
  */
 
 void coneArea(){
@@ -187,6 +314,29 @@ void coneArea(){
  * Description  : Take input of sphere raidus and calculate area
  * Method Type	: void 
  */
+ 
+  /**
+ * \brief Function named sphereArea which ask user for a number, validates it and calculate area of sphere and prints it to the console
+ * 
+ * \fn sphereArea
+ * 
+ *  <P> 
+ * 		<STRONG>Attributes</STRONG> : None <br>
+ *  	<STRONG>Function type</STRONG> : Void <br>
+ *		<STRONG>Variables</STRONG> : 
+ *		<UL>
+ *			<LI>radius : (type: int) To save user input</LI>
+ * 			<LI>area : (type: float) To save area value</LI>
+ *      </UL>
+ *  </P>
+ *  \code
+ * 
+ *  Example of Use Of The Method
+ *  
+ *  sphereArea();
+ *  
+ *  \endcode
+ */
 
 void sphereArea(){
 	/* Variables */
@@ -218,6 +368,30 @@ void sphereArea(){
  *				  area			=> Type: float	=>	To store Area of shape
  * Description  : Take input of cylinder height, raidus and calculate area
  * Method Type	: void 
+ */
+
+ /**
+ * \brief Function named cylinderArea which ask user for two numbers, validates it and calculate area of cylinder and prints it to the console
+ * 
+ * \fn cylinderArea
+ * 
+ *  <P> 
+ * 		<STRONG>Attributes</STRONG> : None <br>
+ *  	<STRONG>Function type</STRONG> : Void <br>
+ *		<STRONG>Variables</STRONG> : 
+ *		<UL>
+ *			<LI>radius : (type: int) To save user input</LI>
+ *			<LI>height : (type: int) To save user input</LI>
+ * 			<LI>area : (type: float) To save area value</LI>
+ *      </UL>
+ *  </P>
+ *  \code
+ * 
+ *  Example of Use Of The Method
+ *  
+ *  cylinderArea();
+ *  
+ *  \endcode
  */
 
 void cylinderArea(){
@@ -253,6 +427,27 @@ void cylinderArea(){
  * Attributes 	: none
  * Description  : Calls every method and run them
  * Method Type	: void 
+ */
+ 
+ /**
+ * \brief main function which runs the program
+ * 
+ * \fn main
+ * 
+ *  <P>
+ * 		Main functions runs when program runs. <br>
+ * 		It prints the instructions and ask for the choice to the user. It uses the while loop to run this calculator continuous. <br>
+ *		While loop breaks when user enter 8 in the console. <br>
+ *	</P>
+ *  <P> 
+ * 		<STRONG>Attributes</STRONG> : None <br>
+ *  	<STRONG>Function type</STRONG> : Void <br>
+ *		<STRONG>Variables</STRONG> : 
+ *		<UL>
+ *			<LI>userChoice : (type: int) To save user input for the choice of the different options</LI>
+ *      </UL>
+ *  </P>
+ *  
  */
  
 void main() {
