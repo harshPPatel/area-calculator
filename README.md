@@ -4,24 +4,6 @@ An C language, console based program which provides different options to the use
 
 See Documentation [here](https://harshppatel.github.io/area%20Calculator%20Documentation%20C%20Language/area_calculator_8c.html).
 
-### includes :
-- stdio.h
-- conio.h
-- math.h
-- stdbool.h
-
-### Global Variables :
-- **PI** : 3.14159
-
-### Included Methods : 
-- squareArea
-- circleArea
-- rectengleArea
-- cubeArea
-- coneArea
-- sphereArea
-- cylinderArea
-
 ### Included Shapes : 
 - Square
 - Circle
@@ -30,8 +12,6 @@ See Documentation [here](https://harshppatel.github.io/area%20Calculator%20Docum
 - Cone
 - Sphere
 - Cylinder
-
-More will be added soon!!
 
 ## Methods
 - ### Square Area Method
