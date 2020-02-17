@@ -4,7 +4,7 @@ An C language, console based program which provides different options to the use
 
 Checkout Live demo here: [Area Calculator](https://repl.it/@harshPPatel/Area-Calculator)
 
-See Documentation [here](https://harshppatel.github.io/area%20Calculator%20Documentation%20C%20Language/area_calculator_8c.html).
+See Documentation [here](https://harshppatel.github.io/area-calculator/area_calculator_8c.html).
 
 ### Included Shapes : 
 - Square
